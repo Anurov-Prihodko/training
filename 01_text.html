@@ -15,9 +15,7 @@
   <body>
     <div class="container">
       <div class="info">
-        <div class="img_width">
-          <img src="img/pug_smile.webp" alt="pug smile" />
-        </div>
+        <img class="avatar" src="img/pug_smile.webp" alt="pug smile" />
         <div class="card_info-text">
           <div class="card_info-descr">
             <h1>Oleksii Anurov-Prykhodko</h1>
@@ -94,35 +92,27 @@
       </div>
 
       <div class="card bkg-yellow">
-        <h3>Send me a message:</h3>
+        <form class="form">
+          <h3>Send me a message:</h3>
 
-        <form>
-          <div class="margin">
-            <div class="form_input">
+          <div class="form-row">
+            <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your name" />
+              <input type="text" id="name" placeholder="Your name..." />
             </div>
 
-            <div class="form_input">
+            <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" id="email" placeholder="Your email" />
+              <input type="text" id="email" placeholder="Your email..." />
             </div>
           </div>
 
-          <div>
+          <div class="form-group">
             <label for="email">Message</label>
-            <div>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Write a message..."
-              ></textarea>
-            </div>
+            <textarea name="" id="" placeholder="Write a message..."></textarea>
           </div>
 
-          <button type="submit">Send</button>
+          <button class="btn" type="submit">Send</button>
         </form>
       </div>
     </div>
